@@ -34,22 +34,6 @@
   text-align: center;
 }
 
-.black {
-  background-color: black;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
-}
-
 #pixel-board {
   display: flex;
   flex-flow: row wrap;
