@@ -40,6 +40,7 @@
   align-content: center;
   justify-content: center;
   width: 200px;
+  margin-top: 20px;
 
 }
 
@@ -50,4 +51,9 @@
   height: 40px;
   width: 40px;
 
+}
+
+.button {
+  margin-top: 40px;
+  border: solid 2px black;
 }
