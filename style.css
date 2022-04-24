@@ -1,46 +1,44 @@
-* {
+* {   /* css reset, valores padroes */
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0; /* conteudo do elemento e suas bordas */
+  box-sizing: border-box; /* que indica que o tamanho agora levará em conta até a borda
+  ou seja  width(largura da area) será a soma do conteúdo com a borda e o padding. */
+}
+
+body {
+  background-image: url('./paleta.jpg');
 }
 
 #color-block {
-  display: flex;
-  align-content: center;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Torna o elemento um flex container automaticamente
+  transformando todos os seus filhos diretos em flex itens. */
+  flex-flow: column wrap; /* permite meus elementos em colunas
+  e nao permite quebra de linha */
+  align-items: center; /* alinha os itens ao centro */
   margin-top: 40px;
 }
 
-#palette-container {
-  display: flex;
-  margin-bottom: 1rem;
-
-}
-
 .color {
-  width: 70px;
-  height: 70px;
-  border: solid 1px black;
-  margin-right: 5px;
-  margin-left: 5px;
-  background-color: white;
-  display: inline-block;
+  cursor: pointer; /* mostra ao usuario que o quadro é clicavel */
+  width: 70px;  /* largura da area do conteudo */
+  height: 70px; /* altura da area do conteudo */
+  border: solid 1px black;  /* borda */
+  margin-right: 10px; /* margem de espaçamento entre eles */
+  display: inline-block; /* coloca um do lado do outro
+  (mesma linha mais se comporta como block) */
 
 }
 
 #title {
-  text-align: center;
+  text-align: center; /* alinha o texto no meio */
+
 }
 
 #pixel-board {
   display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  width: 200px;
-  margin-top: 20px;
+  flex-flow: row wrap; /* Coloca o conteúdo em linha e permite a quebra de linha. */
+  width: 300px; /* projeto pediu 5 elementos de 40px logo a largura sera de 200 */
+  margin-top: 30px;
 
 }
 
@@ -48,12 +46,42 @@
   cursor: pointer;
   border: solid 1px black;
   background-color: white;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 
 }
 
 .button {
+  cursor: pointer;
+  background-color: white;
   margin-top: 40px;
   border: solid 2px black;
+}
+
+.paleta {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.d {
+  margin-left: 10px;
+  color: red;
+  font-size: 40px;
+}
+
+.a {
+  color: black;
+  font-size: 40px;
+}
+
+.b {
+  color: blue;
+  font-size: 40px;
+}
+
+.c {
+  color: orchid;
+  font-size: 40px;
 }
